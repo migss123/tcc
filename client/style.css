@@ -1,0 +1,340 @@
+/* Define as configurações gerais do documento */
+* {
+    /* Remove a margem padrão de todos os elementos */
+    margin: 0;
+    /* Remove o preenchimento padrão de todos os elementos */
+    padding: 0;
+    /* Faz com que a largura e altura incluam bordas e padding */
+    box-sizing: border-box;
+    /* Define a fonte padrão para o site */
+    font-family: Arial, sans-serif;
+}
+
+/* Define o estilo do corpo da página */
+body {
+    /* Define a cor de fundo da página */
+    background-color: #FFEBE1; /* Fundo salmão bem claro do design */
+    /* Organiza os elementos em coluna */
+    display: flex;
+    /* Direciona os elementos em coluna vertical */
+    flex-direction: column;
+    /* Garante que o corpo ocupe pelo menos a altura da viewport */
+    min-height: 100vh;
+}
+
+/* Define o estilo da barra de navegação */
+.navbar {
+    /* Define a cor de fundo da navbar */
+    background-color: #D37555;
+    /* Define a cor do texto */
+    color: white;
+    /* Distribui os elementos com espaço entre eles */
+    display: flex;
+    /* Espaça os elementos nas extremidades */
+    justify-content: space-between;
+    /* Centraliza os itens verticalmente */
+    align-items: center;
+    /* Define o espaço interno da navbar */
+    padding: 10px 40px;
+    /* Adiciona uma borda inferior destacada */
+    border-bottom: 3px solid #C45F3D;
+}
+
+/* Define o estilo do título da marca */
+.brand-title {
+    /* Define o tamanho do texto */
+    font-size: 28px;
+    /* Define o peso da fonte */
+    font-weight: 500;
+    /* Faz o título ocupar uma linha inteira */
+    display: block;
+}
+
+/* Define o estilo do subtítulo da marca */
+.brand-subtitle {
+    /* Define o tamanho do subtítulo */
+    font-size: 11px;
+    /* Faz o subtítulo ocupar uma linha inteira */
+    display: block;
+    /* Adiciona espaço acima do subtítulo */
+    margin-top: 2px;
+}
+
+/* Define o estilo da parte direita da navbar */
+.nav-right {
+    /* Organiza os itens em linha */
+    display: flex;
+    /* Centraliza verticalmente os itens */
+    align-items: center;
+    /* Define o espaço entre os itens */
+    gap: 20px;
+}
+
+/* Define o estilo dos links da navbar */
+.nav-link {
+    /* Define a cor do texto */
+    color: white;
+    /* Remove o sublinhado do link */
+    text-decoration: none;
+    /* Define o tamanho da fonte */
+    font-size: 20px;
+    /* Define a cor de fundo translúcida */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Define o espaço interno do link */
+    padding: 5px 15px;
+    /* Arredonda as bordas */
+    border-radius: 8px;
+    /* Cria uma borda branca ao redor */
+    border: 1px solid white;
+    /* Exibe os elementos em linha */
+    display: flex;
+    /* Centraliza os itens verticalmente */
+    align-items: center;
+    /* Define o espaço entre o ícone e o texto */
+    gap: 5px;
+}
+
+/* Define o estilo do container da busca */
+.search-container {
+    /* Organiza os elementos em linha */
+    display: flex;
+    /* Centraliza verticalmente os itens */
+    align-items: center;
+}
+
+/* Define o estilo do campo de busca */
+.search-input {
+    /* Remove a borda padrão */
+    border: none;
+    /* Define o espaçamento interno */
+    padding: 8px;
+    /* Arredonda as bordas do lado esquerdo */
+    border-radius: 8px 0 0 8px;
+    /* Remove a borda ao focar */
+    outline: none;
+    /* Define a largura do campo */
+    width: 180px;
+}
+
+/* Define o estilo do botão de busca */
+.search-btn {
+    /* Remove a borda padrão */
+    border: none;
+    /* Define a cor de fundo branca */
+    background: white;
+    /* Define o espaçamento interno */
+    padding: 8px 10px;
+    /* Arredonda as bordas do lado direito */
+    border-radius: 0 8px 8px 0;
+    /* Muda o cursor para ponteiro */
+    cursor: pointer;
+    /* Define o tamanho da fonte */
+    font-size: 14px;
+}
+
+/* Define o estilo do container principal */
+.main-container {
+    /* Faz o container crescer para ocupar o espaço restante */
+    flex: 1;
+    /* Centraliza o conteúdo horizontal e verticalmente */
+    display: flex;
+    /* Centraliza horizontalmente o conteúdo */
+    justify-content: center;
+    /* Centraliza verticalmente o conteúdo */
+    align-items: center;
+    /* Define o espaço interno do container */
+    padding: 40px 20px;
+}
+
+/* Define o estilo do card de cadastro */
+.card-cadastro {
+    /* Define a cor de fundo do card */
+    background-color: #DE7E5D;
+    /* Faz o card ocupar toda a largura disponível */
+    width: 100%;
+    /* Limita a largura máxima do card */
+    max-width: 580px;
+    /* Define o espaço interno do card */
+    padding: 25px 35px;
+    /* Arredonda as bordas do card */
+    border-radius: 15px;
+    /* Adiciona sombra ao card */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Define o estilo do título dentro do card */
+.card-cadastro h2 {
+    /* Define a cor do título */
+    color: #FFEBE1;
+    /* Centraliza o texto */
+    text-align: center;
+    /* Define o tamanho da fonte */
+    font-size: 26px;
+    /* Adiciona espaço abaixo do título */
+    margin-bottom: 20px;
+    /* Define o peso da fonte */
+    font-weight: normal;
+}
+
+/* Define o estilo dos grupos de formulário */
+.form-group {
+    /* Adiciona espaço abaixo de cada grupo */
+    margin-bottom: 12px;
+    /* Organiza os elementos em coluna */
+    display: flex;
+    /* Direciona os elementos em coluna */
+    flex-direction: column;
+}
+
+/* Define o estilo das labels dos campos */
+.form-group label {
+    /* Define a cor do texto */
+    color: #FFEBE1;
+    /* Define o tamanho da fonte */
+    font-size: 15px;
+    /* Adiciona espaço abaixo da label */
+    margin-bottom: 4px;
+}
+
+/* Define o estilo dos campos de entrada */
+.form-group input {
+    /* Define a cor de fundo dos inputs */
+    background-color: #E2ECEE;
+    /* Remove a borda padrão */
+    border: none;
+    /* Arredonda as bordas */
+    border-radius: 20px;
+    /* Define o espaço interno */
+    padding: 8px 15px;
+    /* Define o tamanho da fonte */
+    font-size: 14px;
+    /* Remove a borda ao focar */
+    outline: none;
+    /* Define a cor do texto */
+    color: #333;
+    /* Faz o input ocupar toda a largura */
+    width: 100%;
+}
+
+/* Define o estilo das linhas compostas do formulário */
+.form-row {
+    /* Organiza os itens em linha */
+    display: flex;
+    /* Define o espaço entre os itens */
+    gap: 15px;
+}
+
+/* Define a proporção do campo de 20% */
+.pct-20 { flex: 2; }
+/* Define a proporção do campo de 40% */
+.pct-40 { flex: 4; }
+/* Define a proporção do campo de 60% */
+.pct-60 { flex: 6; }
+
+/* Define o estilo da área de ações centralizadas */
+.center-elements {
+    /* Organiza os elementos em coluna */
+    display: flex;
+    /* Direciona os elementos em coluna */
+    flex-direction: column;
+    /* Centraliza os itens horizontalmente */
+    align-items: center;
+    /* Adiciona espaço acima da área */
+    margin-top: 20px;
+}
+
+/* Define o estilo do botão de cadastro */
+.btn-cadastrar {
+    /* Define a cor de fundo do botão */
+    background-color: #AFAFAF;
+    /* Define a cor do texto */
+    color: white;
+    /* Remove a borda padrão */
+    border: none;
+    /* Define o preenchimento interno */
+    padding: 10px 40px;
+    /* Define o tamanho da fonte */
+    font-size: 18px;
+    /* Arredonda as bordas */
+    border-radius: 8px;
+    /* Muda o cursor para ponteiro */
+    cursor: pointer;
+    /* Adiciona sombra ao botão */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    /* Adiciona uma transição suave na cor de fundo */
+    transition: background 0.2s;
+}
+
+/* Define o estilo do botão ao passar o mouse */
+.btn-cadastrar:hover {
+    /* Muda a cor de fundo do botão */
+    background-color: #9c9c9c;
+}
+
+/* Define o estilo do link de login */
+.login-link {
+    /* Define a cor do link */
+    color: #00BCD4;
+    /* Define o tamanho da fonte */
+    font-size: 13px;
+    /* Centraliza o texto */
+    text-align: center;
+    /* Sublinha o texto */
+    text-decoration: underline;
+    /* Adiciona espaço acima do link */
+    margin-top: 10px;
+    /* Define o espaçamento entre linhas */
+    line-height: 1.4;
+}
+
+/* Define o estilo do rodapé */
+.footer {
+    /* Define a cor de fundo do rodapé */
+    background-color: #B15537;
+    /* Define a cor do texto */
+    color: #E0A694;
+    /* Organiza os elementos em linha */
+    display: flex;
+    /* Espaça os elementos nas extremidades */
+    justify-content: space-between;
+    /* Define o espaço interno do rodapé */
+    padding: 8px 40px;
+    /* Define o tamanho da fonte */
+    font-size: 11px;
+}
+
+/* Define a responsividade básica para telas pequenas */
+@media (max-width: 600px) {
+    /* Altera a disposição das linhas do formulário para coluna */
+    .form-row {
+        /* Organiza os elementos em coluna */
+        flex-direction: column;
+        /* Remove o espaço entre os itens */
+        gap: 0;
+    }
+    /* Altera a disposição da navbar em telas pequenas */
+    .navbar {
+        /* Organiza os elementos em coluna */
+        flex-direction: column;
+        /* Define o espaço entre os itens */
+        gap: 10px;
+        /* Centraliza o texto */
+        text-align: center;
+    }
+    /* Ajusta a parte direita da navbar em telas pequenas */
+    .nav-right {
+        /* Organiza os elementos em coluna */
+        flex-direction: column;
+        /* Faz ocupar a largura total */
+        width: 100%;
+    }
+    /* Ajusta o rodapé em telas pequenas */
+    .footer {
+        /* Organiza os elementos em coluna */
+        flex-direction: column;
+        /* Centraliza os itens */
+        align-items: center;
+        /* Define o espaço entre os itens */
+        gap: 5px;
+    }
+}

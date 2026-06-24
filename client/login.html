@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atual Design - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="brand-title">Atual Design</span>
+            <span class="brand-subtitle">Móveis Sob Medida com Alto Padrão de Qualidade.</span>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-link"><span class="icon">🏠</span> Início</a>
+            <a href="#" class="nav-link"><span class="icon">📖</span> Biblioteca</a>
+            <div class="search-container">
+                <input type="text" class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="card-cadastro">
+            <h2>Página de login</h2>
+            
+            <form id="formLogin">
+                <div class="form-group">
+                    <label for="loginIdentificador">Endereço de E-Mail, CPF ou Telefone:</label>
+                    <input type="text" id="loginIdentificador" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginSenha">Senha:</label>
+                    <input type="password" id="loginSenha" required>
+                </div>
+
+                <div class="center-elements">
+                    <button type="submit" class="btn-cadastrar">Login</button>
+                    <a href="/cadastro" class="login-link">Não possuo uma conta<br>Cadastre-se aqui</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>atualdesigntorres@gmail.com</span>
+        <span>Br 101 km 09, Tôrres, Rio Grande Do Sul, Brazil 95560000</span>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
