@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (loginValido && senhaValida) {
       alert(`Bem-vindo de volta, ${usuario.nome || "usuário"}!`);
-      window.location.href = "/";
+      window.location.href = "/home";
     } else {
       alert("Dados incorretos. Verifique suas credenciais.");
     }

@@ -31,6 +31,10 @@ const server = http.createServer((req, res) => {
     pathname = "/login.html";
   } else if (pathname === "/cadastro") {
     pathname = "/cadastro.html";
+  } else if (pathname === "/home") {
+    pathname = "/home.html";
+  } else if (pathname === "/perfil") {
+    pathname = "/perfil.html";
   }
 
   // Garante um caminho seguro antes de localizar o arquivo.
