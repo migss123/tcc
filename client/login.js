@@ -1,26 +1,30 @@
+// Inicializa a lógica de login após o carregamento da página.
 document.addEventListener("DOMContentLoaded", () => {
-    const formLogin = document.getElementById("formLogin");
+  const formLogin = document.getElementById("formLogin");
 
-    formLogin.addEventListener("submit", (event) => {
-        event.preventDefault();
+  if (!formLogin) return;
 
-        const identificador = document.getElementById("loginIdentificador").value;
-        const senhaInserida = document.getElementById("loginSenha").value;
+  formLogin.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-        const dadosSalvos = localStorage.getItem("usuarioCadastro");
+    const identificador = document.getElementById("loginIdentificador").value.trim();
+    const senhaInserida = document.getElementById("loginSenha").value;
+    const dadosSalvos = localStorage.getItem("usuarioCadastro");
 
-        if (dadosSalvos) {
-            const usuario = JSON.parse(dadosSalvos);
-            const loginValido = (identificador === usuario.email || identificador === usuario.cpf || identificador === usuario.telefone);
-            const senhaValida = (senhaInserida === usuario.senha);
+    if (!dadosSalvos) {
+      alert("Nenhum usuário cadastrado ainda.");
+      return;
+    }
 
-            if (loginValido && senhaValida) {
-                alert(`Bem-vindo de volta, ${usuario.nome}!`);
-            } else {
-                alert("Dados incorretos! Verifique suas credenciais.");
-            }
-        } else {
-            alert("Nenhum usuário cadastrado no sistema ainda.");
-        }
-    });
+    const usuario = JSON.parse(dadosSalvos);
+    const loginValido = identificador === usuario.email || identificador === usuario.cpf || identificador === usuario.telefone;
+    const senhaValida = senhaInserida === usuario.senha;
+
+    if (loginValido && senhaValida) {
+      alert(`Bem-vindo de volta, ${usuario.nome || "usuário"}!`);
+      window.location.href = "/";
+    } else {
+      alert("Dados incorretos. Verifique suas credenciais.");
+    }
+  });
 });
